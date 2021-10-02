@@ -1,0 +1,110 @@
+.KeyBoard {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  margin-left: 5%;
+}
+.keyboardRows {
+  margin-top: 5rem;
+}
+.win {
+  text-align: center;
+}
+.hangman {
+  width: 30%;
+  float: left;
+  padding: 20px;
+}
+.hangman img {
+  width: 25rem;
+}
+.keyBoardHangman {
+  width: 100%;
+  float: left;
+}
+.keyboardLetter {
+  display: inline-table;
+  border: 2px solid #4caf50;
+  padding: 1rem;
+  margin: 0.2rem;
+
+  border-radius: 0.5rem;
+}
+.keyboardLetter:hover {
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #A0522D;
+}
+.keyboardLetters {
+  text-align: center;
+}
+.guess,
+.retries {
+  text-align: center;
+}
+.guessWord {
+  font-size: 2rem;
+}
+.restartButton {
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.restartButton:hover {
+  background-color: #FF4500;
+  color: white;
+}
+.gameover {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.gameoverText{
+  font-size: 3rem;
+  font-weight: bold;
+  color:#FF4500;
+}
+.gameoverPText{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.gameoverDiv{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.funeralcar{
+  width: 30%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+.funeralcar img{
+  width: 14rem;
+}
+.win{
+  width: 50%;
+  float: left;
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.winText{
+  font-size: 3rem;
+  font-weight: bold;
+  color:green;
+}
+.winPText{
+  font-size: 2rem;
+  font-weight: bold;
+}
