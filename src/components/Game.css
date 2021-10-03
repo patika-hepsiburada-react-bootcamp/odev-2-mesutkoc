@@ -7,6 +7,36 @@
 .keyboardRows {
   margin-top: 5rem;
 }
+.hint{
+  text-align: center;
+}
+.hintText {
+  visibility: hidden;
+  width: 10rem;
+  background-color: white;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+}
+.hint:hover .hintText {
+  visibility: visible;
+  color: green;
+  font-weight: bold;
+}
+.userGuessList {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.guessListLetter {
+  display: inline;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
 .win {
   text-align: center;
 }
@@ -33,7 +63,7 @@
 .keyboardLetter:hover {
   background-color: #4caf50;
   color: white;
-  border: 2px solid #A0522D;
+  border: 2px solid #a0522d;
 }
 .keyboardLetters {
   text-align: center;
@@ -59,7 +89,7 @@
   cursor: pointer;
 }
 .restartButton:hover {
-  background-color: #FF4500;
+  background-color: #ff4500;
   color: white;
 }
 .gameover {
@@ -69,42 +99,90 @@
   margin-top: 5%;
   margin-left: 5%;
 }
-.gameoverText{
+.gameoverText {
   font-size: 3rem;
   font-weight: bold;
-  color:#FF4500;
+  color: #ff4500;
 }
-.gameoverPText{
+.gameoverPText {
   font-size: 1rem;
   font-weight: bold;
 }
-.gameoverDiv{
-  width: 50%;
-  float: left;
-  padding: 20px;
-}
-.funeralcar{
-  width: 30%;
-  float: left;
+.gameoverDiv {
   padding: 20px;
   text-align: center;
 }
-.funeralcar img{
-  width: 14rem;
+.funeralcar {
+  padding: 20px;
+  text-align: center;
+  animation: funeralRotation 5s infinite linear;
 }
-.win{
+.funeralcar img {
+  width: 10rem;
+}
+.win {
   width: 50%;
   float: left;
   padding: 20px;
   margin-top: 5%;
   margin-left: 5%;
 }
-.winText{
+.winText {
   font-size: 3rem;
   font-weight: bold;
-  color:green;
+  color: green;
 }
-.winPText{
-  font-size: 2rem;
+.winPText {
+  font-size: 1rem;
   font-weight: bold;
+}
+.winDiv {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.medal {
+  width: 30%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  animation: medalRotation 3s infinite linear;
+}
+.medal img {
+  width: 10rem;
+}
+@keyframes medalRotation {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes funeralRotation {
+  0% {
+    width: 20rem;
+  }
+  25% {
+    width: 40rem;
+  }
+  50% {
+    width: 20rem;
+  }
+  75% {
+    width: 40rem;
+  }
+  100% {
+    width: 20rem;
+  }
 }

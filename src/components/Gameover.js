@@ -7,7 +7,6 @@ function Gameover(props) {
       <div className="gameoverDiv">
         <div className="gameoverText">Game Over!</div>
         <p className="gameoverPText">You hanged the man!</p>
-        <p className="gameoverPText">The word is {props.values.selectedWord}.</p>
         <div>{props.values.resButton}</div>
       </div>
       <div className="funeralcar">

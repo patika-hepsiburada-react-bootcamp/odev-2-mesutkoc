@@ -3,9 +3,10 @@
   background-color: #f1f1f1;
   padding: 0.1rem 0.5rem;
 }
-.headerIcon{
-    width: 5rem;
-    height: 5rem;
+.headerIcon {
+  width: 5rem;
+  height: 5rem;
+  float: right;
 }
 .header a {
   float: left;
@@ -17,14 +18,9 @@
 .header a.logo {
   font-size: 3rem;
   font-weight: bold;
+  width: 20%;
 }
-.header a.logo1 {
-  margin-left: 10%;
-  font-size: 3rem;
-  font-weight: bold;
-  border-bottom: 8px solid red;
-}
-
 .header-right {
+  width: 20%;
   float: right;
 }

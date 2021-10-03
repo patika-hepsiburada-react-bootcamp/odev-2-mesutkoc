@@ -18,6 +18,11 @@ function KeyBoard(props) {
         {KeyBoardRow(secondRow, props, mesut)}
         {KeyBoardRow(thirdRow, props, mesut)}
       </div>
+      <div className="userGuessList">
+        {props.playerGuessList.map((letter,index) => (
+          <p key={index} className="guessListLetter">{letter}</p>
+        ))}
+      </div>
     </div>
   );
 }

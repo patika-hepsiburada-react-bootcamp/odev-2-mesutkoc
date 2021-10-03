@@ -8,6 +8,7 @@ function Header(props) {
       <a href="#default" className="logo">
         Hangman!
       </a>
+     
       <div className="header-right">
         <img className="headerIcon" src={HangmanIcon} alt="headerImg" />
       </div>
