@@ -1,5 +1,6 @@
 # Patika.dev - Hepsiburada React Bootcamp
 
+[Try App](https://musing-wozniak-136c6a.netlify.app)
 ## Homework 2 Details
 
 This repository contains second homework. [See details](https://github.com/patika-hepsiburada-react-bootcamp/odevler/tree/main/odev2).
