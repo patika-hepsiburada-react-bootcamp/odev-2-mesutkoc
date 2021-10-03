@@ -5,25 +5,34 @@ import Gameover from "./Gameover";
 import Win from "./Win";
 
 function Game(props) {
+  //const shows player guessed letters and selected word letters.
   const [playerGuessList, addGuess] = useState([]);
   const [selectedWord, setSelectedWord] = useState(props.word);
   const wordLetterList = props.word.split("");
   const list = wordLetterList.map((x) =>
     playerGuessList.includes(x) ? x : "_"
   );
+  //function starts game if user win or lose.
   const startGame = () => {
-    props.tryAgain();
-    setSelectedWord(props.word);
+    const wordGuessNew = props.defineWord();
+    props.setWord(wordGuessNew);
+    props.setCount(5);
+    setSelectedWord(wordGuessNew);
     addGuess([]);
   };
+  //button that used in win and gameover components to restart game.
   const resButton = (
     <button className="restartButton" onClick={() => startGame()}>
       Restart
     </button>
   );
+  //use send button to components
   const values = {
     resButton,
   };
+
+  //this component return 4 different components according to state.
+  // Hangman, Gameover, Keyboard, Win components.
   return (
     <div>
       <div className="guess">

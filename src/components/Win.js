@@ -1,6 +1,7 @@
 import React from "react";
 import Medal from "../assets/medal.png";
 function Win(props) {
+  //this component contains win part.
   return (
     <div className="win">
       <div className="winDiv">

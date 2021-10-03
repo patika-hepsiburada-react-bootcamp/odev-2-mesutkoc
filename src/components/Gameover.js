@@ -1,7 +1,7 @@
 import React from "react";
-import FuneralCar from "../assets/funeralvehicle.png"
+import FuneralCar from "../assets/funeralvehicle.png";
 function Gameover(props) {
-
+  //this component contains gameover part that contains restart button.
   return (
     <div className="gameover">
       <div className="gameoverDiv">

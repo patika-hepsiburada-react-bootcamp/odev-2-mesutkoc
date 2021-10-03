@@ -5,10 +5,10 @@ import HangmanFirstArm from "../assets/HangmanFirstArm.png";
 import HangmanSecondArm from "../assets/HangmanSecondArm.png";
 import HangmanFirstLeg from "../assets/HangmanFirstLeg.png";
 import HangmanSecondLeg from "../assets/HangmanSecondLeg.png";
-import "./Game.css"
-
+import "./Game.css";
 
 export default function Hangman(props) {
+  //const contains hagman pictures according to state.
   const [hangman, setHangman] = useState();
 
   useEffect(() => {
